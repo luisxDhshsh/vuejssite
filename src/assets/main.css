@@ -1,0 +1,69 @@
+html{
+  overflow-x: hidden;
+}
+
+body{
+  width: 100%;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+.titulo-pag{
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(12, 236, 12), rgb(15, 46, 221));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitulo-pag{
+  background: -webkit-linear-gradient(rgb(12, 236, 12), rgb(15, 46, 221));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maintable{
+  border: 1px solid black;
+  display: table;
+  margin: auto;
+}
+
+.maintr{
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+}
+@media screen and (max-width: 600px) {
+   .imagem{
+    flex-direction: column;
+    width: 75vw;
+  }
+
+  .img1{
+      width: 35vw;
+  }
+
+  .img2{
+      width: 35vw;
+  }
+
+  .video1{
+      width: 35vw;
+      height: 100%;
+  }
+
+  .titulo-pag{
+      font-size: xx-large;
+  }
+
+  .subtitulo-pag{
+      font-size: small;
+  }
+  
+  .maintable{
+      width: 35vw;
+  }
+}
