@@ -1,0 +1,1 @@
+import e from"./ImagensComponent-BRMXrIDB.js";import m from"./TabelaComponent-B51zlcYt.js";import t from"./VideoComponent-CbpLFoCE.js";import{o as n,c as r,a as o}from"./index-DFXNlLAh.js";const f={__name:"HomeView",setup(a){return(p,c)=>(n(),r("main",null,[o(e),o(t),o(m)]))}};export{f as default};

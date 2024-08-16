@@ -3,34 +3,34 @@ import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-  <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Design Responsivo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-
-  <body>
-    <div style="margin: auto">
-      <h1 style="text-align: center" class="titulo-pag">
-        TOP 10 AVIÕES DE COMBATE
-      </h1>
-
-      <p style="text-align: center" class="subtitulo-pag">
-        ♪♪"Bolsonaro é sul, Bolsonaro é nordeste, VAI DEZESSETE VAI
-        DEZESSETE..."♪♪
-      </p>
-    </div>
-    
-    <br />
-
-    <HomeView/>
-    
-
-  </body>
-</html>
+  <nav>
+    <router-link to="/">
+      Página Principal
+    </router-link>
+    <router-link to="/videos">
+      Videos
+    </router-link>
+    <router-link to="/tabela">
+      Tabela
+    </router-link>
+    <router-link to="/imagens">
+      Imagens
+    </router-link>
+  </nav>
+  <router-view />
 
 </template>
 
+<style scoped>
+  nav {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  nav > a {
+    color: black;
+    text-decoration: none;
+  }
+</style>
